@@ -1,11 +1,13 @@
 # More Colorful Logger
+
 An easy to use, more colorful logger.
 
 ## Usage
 
 ### Installation
+
 ```console
-$ npm i more-colorful-logger --save
+npm i more-colorful-logger --save
 ```
 
 ### Using in code
@@ -17,7 +19,9 @@ log.error("This is an Error-Log");
 log.warn("This is a Warn-Log");
 log.info("This is an Info-Log");
 ```
-or use this: 
+
+or use this:
+
 ```js
 const { error, warn, info } = require("more-colorful-logger");
 

@@ -1,6 +1,6 @@
 {
     "name": "more-colorful-logger",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "",
     "main": "logger.js",
     "license": "MIT",

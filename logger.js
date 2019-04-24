@@ -25,5 +25,9 @@ module.exports = {
 
     warn: function(content) {
         console.log(`${colors.bgYellow.black(`[WARN!]`)} ${colors.yellow(`${logDate()}:`)} ${content}`);
+    },
+
+    completed: function(content) {
+        console.log(`${colors.bgGreen.black(`[COMPLETED]`)} ${colors.green(`${logDate()}:`)} ${content}`);
     }
 }

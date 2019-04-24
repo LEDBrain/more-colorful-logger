@@ -14,20 +14,40 @@ let logDate = () => {
     return `[${h}:${m}:${s}]`;
 }
 
+let checkString = (input) => {
+    if (input === true || input === false || input === 0) {
+        return input.toString();
+    } else if (!input || input === "" || input === 1) {
+        return "true";
+    }
+}
+
 module.exports = {
-    error: function(content) {
-        console.log(`${colors.bgRed(`[ERROR!]`)} ${colors.red(`${logDate()}:`)} ${content}`);
+    error: function(content, bool) {
+        let string = checkString(bool);
+        let logText = string === "true" ? `${colors.bgRed(`[ERROR!]`)} ${colors.red(`${logDate()}:`)} ${content}` : `${colors.bgRed(`[ERROR!]`)}${colors.red(`:`)} ${content}`;    
+        
+        console.log(logText);
     },
 
-    info: function(content) {
-        console.log(`${colors.bgCyan(`[INFO]`)} ${colors.cyan(`${logDate()}:`)} ${content}`);
+    info: function(content, bool) {
+        let string = checkString(bool);
+        let logText = string === "true" ? `${colors.bgCyan(`[INFO]`)} ${colors.cyan(`${logDate()}:`)} ${content}` : `${colors.bgCyan(`[INFO]`)}${colors.cyan(`:`)} ${content}`;
+        
+        console.log(logText);
     },
 
-    warn: function(content) {
-        console.log(`${colors.bgYellow.black(`[WARN!]`)} ${colors.yellow(`${logDate()}:`)} ${content}`);
+    warn: function(content, bool) {
+        let string = checkString(bool);
+        let logText = string === "true" ? `${colors.bgYellow.black(`[WARN!]`)} ${colors.yellow(`${logDate()}:`)} ${content}` : `${colors.bgYellow.black(`[WARN!]`)}${colors.yellow(`:`)} ${content}`;
+    
+        console.log(logText);
     },
 
-    completed: function(content) {
-        console.log(`${colors.bgGreen.black(`[COMPLETED]`)} ${colors.green(`${logDate()}:`)} ${content}`);
+    completed: function(content, bool) {
+        let string = checkString(bool);
+        let logText = string === "true" ? `${colors.bgGreen.black(`[COMPLETED]`)} ${colors.green(`${logDate()}:`)} ${content}` : `${colors.bgGreen.black(`[COMPLETED]`)}${colors.green(`:`)} ${content}`;
+    
+        console.log(logText);
     }
 }

@@ -16,14 +16,14 @@ let logDate = () => {
 
 module.exports = {
     error: function(content) {
-        console.log(`${colors.bgRed("[ERROR!]")} ${colors.red(`${logDate()}:`)} ${content}`);
+        console.log(`${colors.bgRed(`[ERROR!]`)} ${colors.red(`${logDate()}:`)} ${content}`);
     },
 
     info: function(content) {
-        console.log(`${colors.bgCyan("[INFO]")} ${colors.cyan(`${logDate()}:`)} ${content}`);
+        console.log(`${colors.bgCyan(`[INFO]`)} ${colors.cyan(`${logDate()}:`)} ${content}`);
     },
 
     warn: function(content) {
-        console.log(`${colors.bgYellow("[WARN!]")} ${colors.yellow(`${logDate()}:`)} ${content}`);
+        console.log(`${colors.bgYellow.black(`[WARN!]`)} ${colors.yellow(`${logDate()}:`)} ${content}`);
     }
 }

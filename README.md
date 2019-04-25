@@ -12,12 +12,19 @@ npm i more-colorful-logger --save
 
 ### Using in code
 
+usage
+with Timestamp | without Timestamp
+----------------- | -----------------
+true or by default (no input) | false
+1 | 0
+
 ```js
 const log = require("more-colorful-logger");
 
-log.error("This is an Error-Log");
-log.warn("This is a Warn-Log");
-log.info("This is an Info-Log");
+log.error("This is an Error-Log"); // with timestamp
+log.warn("This is a Warn-Log", false); // without timestamp
+log.info("This is an Info-Log", 0); // without timestamp
+log.completed("This is a Completed-Log", 1) // with Timestamp
 ```
 
 or use this:

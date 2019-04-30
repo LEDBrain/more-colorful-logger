@@ -12,15 +12,15 @@ let logDate = () => {
         s = (secD < 10 ? "0": "") + secD;
 
     return `[${h}:${m}:${s}]`;
-}
+};
 
 let checkString = (input) => {
     if (input === true || input === false || input === 0) {
         return input.toString();
-    } else if (!input || input === "" || input === 1) {
+    } else if (!input || input === 1) {
         return "true";
     }
-}
+};
 
 module.exports = {
     error: function(content, bool) {
@@ -50,4 +50,4 @@ module.exports = {
     
         console.log(logText);
     }
-}
+};

@@ -20,6 +20,7 @@ true or by default (no input) | false
 1 | 0
 
 Example:
+
 ```js
 const log = require("more-colorful-logger");
 

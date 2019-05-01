@@ -27,7 +27,7 @@
         "logger"
     ],
     "scripts": {
-        "test": "node test.js",
-        "pretest": "./node_modules/jshint/bin/jshint js/"
+        "pretest": "./node_modules/jshint/bin/jshint",
+        "test": "node test.js"
       }
 }

@@ -1,9 +1,9 @@
 {
     "name": "more-colorful-logger",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "",
     "main": "logger.js",
-    "license": "MIT",
+    "license": "Apache-2.0",
     "private": false,
     "dependencies": {
         "colors": "^1.3.3"
@@ -25,9 +25,5 @@
         "info",
         "colors",
         "logger"
-    ],
-    "scripts": {
-        "pretest": "./node_modules/jshint/bin/jshint",
-        "test": "node test.js"
-      }
+    ]
 }

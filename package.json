@@ -1,5 +1,5 @@
 {
-    "name": "more-colorful-logger",
+    "name": "@TeamCodebusters/more-colorful-logger",
     "version": "1.0.7",
     "description": "",
     "main": "logger.js",
@@ -13,7 +13,7 @@
       },
     "repository": {
         "type": "git",
-        "url": "https://github.com/TeamCodebusters/more-colorful-logger.git"
+        "url": "git://github.com/TeamCodebusters/more-colorful-logger.git"
     },
     "author": "kokosnuss_dev",
     "keywords": [
@@ -25,5 +25,8 @@
         "info",
         "colors",
         "logger"
-    ]
+    ],
+    "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
+    }
 }

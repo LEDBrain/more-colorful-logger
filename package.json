@@ -16,6 +16,11 @@
         "url": "git://github.com/TeamCodebusters/more-colorful-logger.git"
     },
     "author": "kokosnuss_dev",
+    "contributors": [
+        {
+            "name": "Jan (KBOE2)"
+        }
+    ],
     "keywords": [
         "log",
         "colorful",
@@ -27,6 +32,9 @@
         "logger"
     ],
     "publishConfig": {
-    "registry":"https://npm.pkg.github.com/"
+        "registry":"https://npm.pkg.github.com/"
+    },
+    "bugs": {
+        "bugs": "https://github.com/TeamCodebusters/more-colorful-logger/issues"
     }
 }
